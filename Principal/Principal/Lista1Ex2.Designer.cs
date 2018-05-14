@@ -41,8 +41,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_Resultado = new System.Windows.Forms.TextBox();
+            this.btn_resultado = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +63,7 @@
             this.txt_QuantidadeLitros.Name = "txt_QuantidadeLitros";
             this.txt_QuantidadeLitros.Size = new System.Drawing.Size(82, 20);
             this.txt_QuantidadeLitros.TabIndex = 1;
+            this.txt_QuantidadeLitros.TextChanged += new System.EventHandler(this.txt_QuantidadeLitros_TextChanged);
             // 
             // label2
             // 
@@ -169,22 +170,24 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "todos os resultados";
             // 
-            // textBox1
+            // txt_Resultado
             // 
-            this.textBox1.Location = new System.Drawing.Point(185, 320);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(294, 96);
-            this.textBox1.TabIndex = 14;
+            this.txt_Resultado.Location = new System.Drawing.Point(185, 320);
+            this.txt_Resultado.Multiline = true;
+            this.txt_Resultado.Name = "txt_Resultado";
+            this.txt_Resultado.Size = new System.Drawing.Size(294, 96);
+            this.txt_Resultado.TabIndex = 14;
+            this.txt_Resultado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
+            // btn_resultado
             // 
-            this.button1.Location = new System.Drawing.Point(41, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 69);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Resultados";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_resultado.Location = new System.Drawing.Point(41, 338);
+            this.btn_resultado.Name = "btn_resultado";
+            this.btn_resultado.Size = new System.Drawing.Size(86, 69);
+            this.btn_resultado.TabIndex = 15;
+            this.btn_resultado.Text = "Resultados";
+            this.btn_resultado.UseVisualStyleBackColor = true;
+            this.btn_resultado.Click += new System.EventHandler(this.button1_Click);
             // 
             // Lista1Ex2
             // 
@@ -192,8 +195,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(516, 453);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btn_resultado);
+            this.Controls.Add(this.txt_Resultado);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -229,7 +232,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_Resultado;
+        private System.Windows.Forms.Button btn_resultado;
     }
 }

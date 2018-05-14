@@ -62,13 +62,61 @@
     <Compile Include="Lista1Ex2.Designer.cs">
       <DependentUpon>Lista1Ex2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lista1Ex3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex3.Designer.cs">
+      <DependentUpon>Lista1Ex3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista1Ex4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex4.Designer.cs">
+      <DependentUpon>Lista1Ex4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista1Ex5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex5.Designer.cs">
+      <DependentUpon>Lista1Ex5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista1Ex6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex6.Designer.cs">
+      <DependentUpon>Lista1Ex6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista1Ex7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex7.Designer.cs">
+      <DependentUpon>Lista1Ex7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lista1Ex1.resx">
       <DependentUpon>Lista1Ex1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lista1Ex2.resx">
       <DependentUpon>Lista1Ex2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista1Ex3.resx">
+      <DependentUpon>Lista1Ex3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista1Ex4.resx">
+      <DependentUpon>Lista1Ex4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista1Ex5.resx">
+      <DependentUpon>Lista1Ex5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista1Ex6.resx">
+      <DependentUpon>Lista1Ex6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista1Ex7.resx">
+      <DependentUpon>Lista1Ex7.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

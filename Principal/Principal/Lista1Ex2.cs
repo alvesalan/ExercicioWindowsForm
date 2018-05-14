@@ -38,5 +38,25 @@ namespace Principal
             MessageBox.Show(string.Format("Valor total pago: " + Resultado));
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double QTD = Convert.ToDouble(txt_QuantidadeLitros.Text);
+            double AnosConsumidos = Convert.ToDouble(txt_AnosConsumidos.Text);
+            double ValorPorLitro = Convert.ToDouble(mtb_Valor.Text);
+            string Resultado = string.Format(@"Quantidades de litros totais consumidos: " + QTD * AnosConsumidos +
+                "Valor total pago: " + QTD * AnosConsumidos * ValorPorLitro);
+            txt_Resultado.Text = Resultado;
+        }
+
+        private void txt_QuantidadeLitros_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

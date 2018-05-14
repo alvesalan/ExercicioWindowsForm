@@ -16,7 +16,7 @@ namespace Principal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Lista1Ex2());
+            Application.Run(new Form1());
         }
     }
 }
