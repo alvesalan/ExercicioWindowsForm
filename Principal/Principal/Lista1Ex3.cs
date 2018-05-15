@@ -30,7 +30,18 @@ namespace Principal
 
         private void btn_Soma_Click(object sender, EventArgs e)
         {
-            double N1 = Convert.ToDouble(txt_N1.Text);
+            double N1 = 0;
+            try
+            {
+                 N1 = Convert.ToDouble(txt_N1.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Digite apenas numeros");
+                txt_N1.Focus();
+                return;
+            }
+            
             double N2 = Convert.ToDouble(txt_N2.Text);
             MessageBox.Show("A soma dos numeros é: "+ N1 + "  + " + N2 + " = " + (N1 + N2));
 

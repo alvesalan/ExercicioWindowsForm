@@ -58,5 +58,29 @@ namespace Principal
             Lista1Ex7 lista1ex7 = new Lista1Ex7();
             lista1ex7.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Lista1Ex8 lista1ex8 = new Lista1Ex8();
+            lista1ex8.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Lista1Ex09 lista1ex9 = new Lista1Ex09();
+            lista1ex9.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Lista1Ex910 lista1ex10 = new Lista1Ex910();
+            lista1ex10.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Lista1Ex911 lista1ex911 = new Lista1Ex911();
+            lista1ex911.Show();
+        }
     }
 }

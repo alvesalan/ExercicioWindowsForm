@@ -24,7 +24,18 @@ namespace Principal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int Sucesso = Convert.ToInt32(txt_numero.Text);
+            int Sucesso = 0;
+            try
+            {
+                Sucesso = Convert.ToInt32(txt_numero.Text);
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("PorFavor digite apenas numeros !!");
+                return;
+            }
+
             MessageBox.Show("Sucessor: " + (Sucesso + 1));
         }
 

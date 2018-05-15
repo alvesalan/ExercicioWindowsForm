@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lista1Ex910.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex910.Designer.cs">
+      <DependentUpon>Lista1Ex910.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista1Ex9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex9.Designer.cs">
+      <DependentUpon>Lista1Ex9.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,8 +105,26 @@
     <Compile Include="Lista1Ex7.Designer.cs">
       <DependentUpon>Lista1Ex7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lista1Ex8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex8.Designer.cs">
+      <DependentUpon>Lista1Ex8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista1Ex911.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista1Ex911.Designer.cs">
+      <DependentUpon>Lista1Ex911.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Lista1Ex910.resx">
+      <DependentUpon>Lista1Ex910.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista1Ex9.resx">
+      <DependentUpon>Lista1Ex9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +148,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lista1Ex7.resx">
       <DependentUpon>Lista1Ex7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista1Ex8.resx">
+      <DependentUpon>Lista1Ex8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista1Ex911.resx">
+      <DependentUpon>Lista1Ex911.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

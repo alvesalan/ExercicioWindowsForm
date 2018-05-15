@@ -21,16 +21,61 @@ namespace Principal
 
         private void btn_QuantidadeLitrosConsumidos_Click(object sender, EventArgs e)
         {
-            int qtdLitros = Convert.ToInt32(txt_QuantidadeLitros.Text);
-            int qtdAnos = Convert.ToInt32(txt_AnosConsumidos.Text);
+            int qtdAnos = 0;
+            int qtdLitros = 0;
+            try
+            {
+               qtdLitros = Convert.ToInt32(txt_QuantidadeLitros.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("PorFavor digite apenas numeros");
+                return;
+            }
+
+
+            try
+            {
+                qtdAnos = Convert.ToInt32(txt_AnosConsumidos.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("PorFavor digite apenas numeros");
+                return;
+            }
+            
 
             MessageBox.Show(string.Format("Total de Litros consumidos: " + (qtdAnos * qtdLitros)));
         }
 
         private void btn_ValorTotalPago_Click(object sender, EventArgs e)
         {
-            int qtdLitros = Convert.ToInt32(txt_QuantidadeLitros.Text);
-            int qtdAnos = Convert.ToInt32(txt_AnosConsumidos.Text);
+            int qtdAnos = 0;
+            int qtdLitros = 0;
+            try
+            {
+                qtdLitros = Convert.ToInt32(txt_QuantidadeLitros.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("PorFavor digite apenas numeros");
+                return;
+            }
+
+
+            try
+            {
+                qtdAnos = Convert.ToInt32(txt_AnosConsumidos.Text);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("PorFavor digite apenas numeros");
+                return;
+            }
+
+
            double Valor = Convert.ToDouble(mtb_Valor.Text);
            double ValorTotal = qtdAnos * qtdLitros;
            double Resultado = ValorTotal * Valor;
@@ -46,9 +91,39 @@ namespace Principal
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double QTD = Convert.ToDouble(txt_QuantidadeLitros.Text);
-            double AnosConsumidos = Convert.ToDouble(txt_AnosConsumidos.Text);
-            double ValorPorLitro = Convert.ToDouble(mtb_Valor.Text);
+            double QTD = 0;
+            double AnosConsumidos = 0;
+            double ValorPorLitro = 0;
+
+            try
+            {
+                QTD = Convert.ToDouble(txt_QuantidadeLitros.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("PorFavor digite apenas numeros");
+                return;
+            }
+
+
+            try
+            {
+
+            AnosConsumidos = Convert.ToDouble(txt_AnosConsumidos.Text);
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("PorFavor digite apenas numeros");
+                return;
+            }
+
+
+            
+            ValorPorLitro = Convert.ToDouble(mtb_Valor.Text);
+           
+           
+
             string Resultado = string.Format(@"Quantidades de litros totais consumidos: " + QTD * AnosConsumidos +
                 "Valor total pago: " + QTD * AnosConsumidos * ValorPorLitro);
             txt_Resultado.Text = Resultado;
