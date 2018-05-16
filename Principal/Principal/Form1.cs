@@ -82,5 +82,11 @@ namespace Principal
             Lista1Ex911 lista1ex911 = new Lista1Ex911();
             lista1ex911.Show();
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Lista2Ex01 lista2ex1 = new Lista2Ex01();
+            lista2ex1.Show();
+        }
     }
 }
