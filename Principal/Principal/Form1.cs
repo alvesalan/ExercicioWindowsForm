@@ -94,5 +94,11 @@ namespace Principal
             Lista2Ex02 lista2ex02 = new Lista2Ex02();
             lista2ex02.Show();
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Lista2Ex03 lista2ex03 = new Lista2Ex03();
+            lista2ex03.Show();
+        }
     }
 }

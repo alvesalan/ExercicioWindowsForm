@@ -279,6 +279,7 @@
             this.button20.TabIndex = 15;
             this.button20.Text = "Ex 3";
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
